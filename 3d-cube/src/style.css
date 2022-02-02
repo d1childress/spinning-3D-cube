@@ -1,5 +1,5 @@
 body {
-  background: white;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,39 +30,63 @@ body {
   opacity: 0.5;
   display: flex;
   align-items: center;
+  backface-visibility: visible;
   justify-content: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-clip: border-box;
+}
+
+.front {
+  transform: translateZ(-100px);
+  background: #0A722C;
+background: -webkit-radial-gradient(center, #0A722C, #010101);
+background: -moz-radial-gradient(center, #0A722C, #010101);
+background: radial-gradient(ellipse at center, #0A722C, #010101);
 }
 
 .back {
     transform: translateZ(-100px);
     background: rgb(54, 255, 255);
+ background: -webkit-linear-gradient(bottom right, #2ED530, #F37C52);
+ background: -moz-linear-gradient(bottom right, #2ED530, #F37C52);
+ background: linear-gradient(to top left, #2ED530, #F37C52);
+  
 }
 .left {
     transform: translateX(-100px) rotateY(-90deg);
     background: rgb(133, 40, 255);
+  background: -webkit-linear-gradient(left, #CA250A, #FFB4D8);
+  background: -moz-linear-gradient(left, #CA250A, #FFB4D8);
+  background: linear-gradient(to right, #CA250A, #FFB4D8);
 }
 .right {
     transform: translateX(100px) rotateY(90deg);
-    background: rgb(113, 36, 255);
+    background: #D09100;
+background: -webkit-radial-gradient(left, #D09100, #863A5B);
+background: -moz-radial-gradient(left, #D09100, #863A5B);
+background: radial-gradient(to right, #D09100, #863A5B);
 }
 .top {
     transform: translateY(-100px) rotateX(-90deg);
-    background: rgb(295, 01, 235);
+    background: #1020C3;
+background: -webkit-radial-gradient(left, #1020C3, #80919F);
+background: -moz-radial-gradient(left, #1020C3, #80919F);
+background: radial-gradient(to right, #1020C3, #80919F);
 }
 .bottom {
     transform: translateY(100px) rotateX(90deg);
-    background: rgb(255, 109, 243);
+    background: #5C8DFC;
+background: -webkit-radial-gradient(left, #5C8DFC, #C12F06);
+background: -moz-radial-gradient(left, #5C8DFC, #C12F06);
+background: radial-gradient(to right, #5C8DFC, #C12F06);
+  
 }
 
 @keyframes rotate {
-      30% {
-        transform: rotate3d(1,1,0,360deg);
-    } 70% {
-        transform: rotate3d(0,-2,0,-180deg);
-    } 100% {
-        transform: rotate3d(1,1,0,45deg);
-    }
+  40%{
+    transform: rotate3d(1,1,0,360deg);
+  }
 }
-
 
 
