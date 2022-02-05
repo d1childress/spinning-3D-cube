@@ -38,7 +38,7 @@ body {
 }
 
 .front {
-  transform: translateZ(-100px);
+  transform: translateZ(100px);
   background: #0A722C;
 background: -webkit-radial-gradient(center, #0A722C, #010101);
 background: -moz-radial-gradient(center, #0A722C, #010101);
