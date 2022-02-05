@@ -1,3 +1,2 @@
 # spinning-3D-cube
-
-![CSS-3D-cube](https://user-images.githubusercontent.com/53198985/152191123-f99d9771-4c3f-4d9d-92b9-65c4e35fb802.jpg)
+![3D-cube-black](https://user-images.githubusercontent.com/53198985/152632137-5b8e39ba-431d-4a04-a28a-f83267f897f8.jpeg)
